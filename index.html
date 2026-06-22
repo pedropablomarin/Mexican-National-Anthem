@@ -1,0 +1,676 @@
+<html>
+        <head><title>Downloaded HTML</title></head>
+        <body>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Masterclass: The Mexican National Anthem</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+            color: #111111;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Minimalist Artistic Header */
+        .header-container {
+            text-align: center;
+            padding: 80px 20px 50px 20px;
+            border-bottom: 1px solid #eaeaea;
+            background-color: #ffffff;
+        }
+        .header-container h1 {
+            font-size: 28pt;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+            margin: 0 0 15px 0;
+            color: #000000;
+        }
+        .header-container p {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 11pt;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #666666;
+            margin: 0;
+        }
+
+        .main-wrapper {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Introduction Box - Fine Typography Focus */
+        .intro-section {
+            margin-bottom: 40px;
+        }
+        .intro-section p {
+            font-size: 13pt;
+            color: #222222;
+            text-align: justify;
+            margin: 0 0 20px 0;
+        }
+        .intro-section .author-signature {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-style: italic;
+            font-size: 12pt;
+            color: #555555;
+            margin-top: 15px;
+            display: block;
+        }
+
+        /* Poetry Info Section */
+        .poetry-section {
+            background-color: #fcfcfc;
+            border-left: 3px solid #006341;
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+        .poetry-section h3 {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 11pt;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin: 0 0 10px 0;
+            color: #006341;
+        }
+        .poetry-section p {
+            font-size: 12pt;
+            color: #333333;
+            margin: 0;
+            text-align: justify;
+        }
+
+        /* Waving Mexican Flag Asset Section */
+        .flag-wrapper {
+            text-align: center;
+            margin: 40px 0 50px 0;
+        }
+        .flag-animation {
+            width: 140px;
+            height: 84px;
+            display: inline-block;
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border: 1px solid #f0f0f0;
+            position: relative;
+            overflow: hidden;
+            border-radius: 2px;
+        }
+        /* Elegant CSS Waving Flag Simulation Layer */
+        .flag-animation::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(
+                -45deg,
+                rgba(255,255,255,0) 0%,
+                rgba(255,255,255,0.2) 25%,
+                rgba(0,0,0,0.08) 50%,
+                rgba(255,255,255,0.15) 75%,
+                rgba(0,0,0,0) 100%
+            );
+            background-size: 200% 100%;
+            animation: waveMotion 4s ease-in-out infinite;
+        }
+        /* Pure CSS clean representation of the Mexican Flag colors */
+        .flag-tricolor {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        .flag-bar { height: 100%; fill: #000; }
+        .color-green { width: 33.33%; background-color: #006341; }
+        .color-white { width: 33.34%; background-color: #ffffff; position: relative; }
+        .color-red { width: 33.33%; background-color: #CE1126; }
+        .emblem-dot {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 12px; height: 12px;
+            background-color: #b58228;
+            border-radius: 50%;
+            opacity: 0.9;
+        }
+
+        @keyframes waveMotion {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Audio Listening Lounge */
+        .listening-lounge {
+            background-color: #fafafa;
+            border: 1px solid #eeeeee;
+            padding: 35px 25px;
+            margin-bottom: 50px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .listening-lounge h3 {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 10pt;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0 0 15px 0;
+            color: #000000;
+        }
+        .listening-lounge .audio-intro-text {
+            font-size: 12pt;
+            color: #222222;
+            margin: 0 0 15px 0;
+            text-align: justify;
+        }
+        .listening-lounge .audio-context-text {
+            font-size: 11pt;
+            color: #444444;
+            margin: 0 0 25px 0;
+            text-align: justify;
+            line-height: 1.6;
+            border-top: 1px dashed #dddddd;
+            padding-top: 15px;
+        }
+        audio {
+            width: 100%;
+            max-width: 450px;
+            outline: none;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        /* Historical Insights Section */
+        .insights-box {
+            border-top: 1px solid #111111;
+            border-bottom: 1px solid #111111;
+            padding: 30px 10px;
+            margin-bottom: 50px;
+        }
+        .insights-box h2 {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 11pt;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0 0 20px 0;
+        }
+        .meta-group {
+            margin-bottom: 12px;
+            font-size: 11pt;
+        }
+        .meta-group strong {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 9.5pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            width: 140px;
+            color: #444444;
+        }
+
+        /* Lyric Content - High Typography Focus */
+        .lyrics-container {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .lyrics-container h2 {
+            font-size: 22pt;
+            font-weight: 400;
+            margin-bottom: 40px;
+            color: #000000;
+        }
+        .chorus-block {
+            font-weight: bold;
+            font-style: italic;
+            margin: 30px 0;
+            padding: 0 20px;
+        }
+        .stanza-block {
+            margin: 45px 0;
+        }
+        .block-label {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 9pt;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #999999;
+            margin-bottom: 15px;
+        }
+        .lyric-row {
+            font-size: 13pt;
+            margin: 8px 0;
+            color: #111111;
+        }
+        
+        /* Elegant Embedded Dictionary Interlinks */
+        .vocabulary-link {
+            color: #000000;
+            text-decoration: none;
+            border-bottom: 1px solid #111111;
+            padding-bottom: 1px;
+            transition: all 0.2s ease;
+        }
+        .vocabulary-link:hover {
+            background-color: #f5f5f5;
+            color: #555555;
+            border-bottom-color: #666666;
+        }
+
+        /* Cultural Dictionary Layout */
+        .cultural-dictionary {
+            background-color: #ffffff;
+            border-top: 1px solid #111111;
+            padding-top: 40px;
+            margin-bottom: 40px;
+        }
+        .cultural-dictionary h2 {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 12pt;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0 0 30px 0;
+        }
+        .dictionary-row {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f0f0f0;
+            scroll-margin-top: 20px;
+        }
+        .dictionary-row:last-child {
+            border-bottom: none;
+        }
+        .term-header {
+            font-size: 13pt;
+            font-weight: bold;
+            color: #000000;
+        }
+        .term-english-ref {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 9.5pt;
+            color: #666666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-left: 10px;
+        }
+        .term-definition {
+            margin: 8px 0 0 0;
+            font-size: 11.5pt;
+            color: #333333;
+            text-align: justify;
+        }
+
+        /* Call to Action - Google Form Section */
+        .form-cta-section {
+            border-top: 1px dashed #cccccc;
+            padding: 40px 10px;
+            text-align: center;
+            background-color: #fffdf9;
+            margin-bottom: 40px;
+        }
+        .form-cta-section p {
+            font-size: 13pt;
+            color: #222222;
+            margin: 0 0 20px 0;
+        }
+        .btn-form-redirect {
+            display: inline-block;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 10pt;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #ffffff;
+            background-color: #111111;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 2px;
+            transition: background-color 0.2s ease;
+        }
+        .btn-form-redirect:hover {
+            background-color: #444444;
+        }
+
+        /* Instructor Biography Section */
+        .instructor-profile {
+            background-color: #ffffff;
+            border-top: 1px solid #eaeaea;
+            padding-top: 50px;
+            margin-top: 20px;
+        }
+        .instructor-profile h2 {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 11pt;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0 0 25px 0;
+            color: #666666;
+        }
+        .profile-layout {
+            display: block;
+        }
+        .avatar-frame {
+            width: 110px;
+            height: 110px;
+            border: 1px solid #dddddd;
+            border-radius: 50%;
+            float: left;
+            margin-right: 25px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-image: url('autor.jpg'); /* Reemplazar por la ruta correcta si cambia en GitHub */
+        }
+        .avatar-fallback-text {
+            font-size: 8pt;
+            color: #999999;
+            text-align: center;
+            line-height: 110px;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+        .biography-text {
+            overflow: hidden;
+        }
+        .instructor-name {
+            font-size: 16pt;
+            font-weight: bold;
+            color: #000000;
+            margin: 0 0 8px 0;
+        }
+        .biography-paragraph {
+            margin: 0 0 20px 0;
+            font-size: 11pt;
+            color: #222222;
+            text-align: justify;
+        }
+        .external-portfolio-links {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 9.5pt;
+        }
+        .external-portfolio-links a {
+            color: #000000;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: 600;
+            border-bottom: 1px solid #000000;
+            transition: color 0.2s;
+        }
+        .external-portfolio-links a:hover {
+            color: #666666;
+            border-bottom-color: #666666;
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>The Mexican National Anthem</h1>
+        <p>An Interactive Masterclass on Music, Lyrics & Cultural Identity</p>
+    </div>
+
+    <div class="main-wrapper">
+        
+        <div class="intro-section">
+            <p><strong>Do you identify as Mexican-American?</strong> If you do, it is almost certain that you have proudly sung the American national anthem throughout your life. But how deeply do you know the melody and historical weight of the Mexican National Anthem?</p>
+            <p>To promote <strong>cultural understanding</strong>, I created this interactive masterclass for you to experience how the Mexican anthem sounds and learn how to sing it correctly, and discover the deep cultural significance behind its classic vocabulary. It is highly likely that your mexicans parents or grandparents carried this song close to their hearts, bringing back rich memories and ancestral pride for our roots. Thank you for joining, and please enjoy this learning experience.</p>
+            <span class="author-signature">— Pedro Pablo Marín</span>
+        </div>
+
+        <div class="poetry-section">
+            <h3>Poetry</h3>
+            <p>The poetic style of the Mexican National Anthem is lyrical because of its patriotic passion and epic because it focuses on highlighting bravery in war and the courage of the people. Interestingly, it is the same lyrical and epic style found in some modern corridos.</p>
+        </div>
+
+        <div class="insights-box">
+            <h2>Anthem History & Origins</h2>
+            <div class="meta-group"><strong>Composition Year</strong> 1853 (Lyrics) / 1854 (Music). Officially adopted by presidential decree in 1943.</div>
+            <div class="meta-group"><strong>Lyricist</strong> Francisco González Bocanegra (San Luis Potosí, 1824 – Mexico City, 1861). A highly regarded romantic poet and playwright.</div>
+            <div class="meta-group"><strong>Composer</strong> Jaime Nunó Roca (Girona, Spain, 1824 – New York, 1908). A Spanish-born military band director who crafted the anthem’s grand march structure.</div>
+        </div>
+
+        <div class="listening-lounge">
+            <h3>Interactive Listening Session</h3>
+            <p class="audio-intro-text">Below is an audio recording of the Mexican National Anthem for you to listen to while reading the lyrics and getting a feel for the song. I've also included a brief glossary with the meanings in English and Spanish.</p>
+            
+            <p class="audio-context-text">Listen <strong>Alejandro Fernández Sings Mexico’s National Anthem FIFA World Cup 2026 Opening Match</strong> Enjoy!</p>
+            
+            <audio controls>
+                <source src="https://github.com/pedropablomarin/Mexican-National-Anthem/blob/d2441bab380a3b635e6f2cceaae0ab70d12323f3/Alejandro%20Ferna%CC%81ndez%20Sings%20Mexico%E2%80%99s%20National%20Anthem%20%20FIFA%20World%20Cup%202026%20Opening%20Match.mp3" type="audio/mpeg">
+                Your browser does not support the audio playback element.
+            </audio>
+        </div>
+
+        <div class="flag-wrapper">
+            <div class="flag-animation">
+                <div class="flag-tricolor">
+                    <div class="flag-bar color-green"></div>
+                    <div class="flag-bar color-white"><div class="emblem-dot"></div></div>
+                    <div class="flag-bar color-red"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lyrics-container">
+            <h2>Letra del Himno</h2>
+
+            <div class="chorus-block">
+                <div class="block-label">Estribillo</div>
+                <div class="lyric-row">Mexicanos, al grito de guerra</div>
+                <div class="lyric-row">el acero a prestad y el <a href="#term-bridon" class="vocabulary-link">bridón</a>,</div>
+                <div class="lyric-row">y <a href="#term-retiemble" class="vocabulary-link">retiemble</a> en sus centros la tierra</div>
+                <div class="lyric-row">al sonoro rugir del cañón.</div>
+            </div>
+
+            <div class="stanza-block">
+                <div class="block-label">Estrofa I</div>
+                <div class="lyric-row"><a href="#term-cina" class="vocabulary-link">Ciña</a> ¡oh Patria! tus sienes de oliva</div>
+                <div class="lyric-row">de la paz el <a href="#term-arcangel" class="vocabulary-link">arcángel</a> divino,</div>
+                <div class="lyric-row">que en el cielo tu eterno destino</div>
+                <div class="lyric-row">por el dedo de Dios se escribió.</div>
+                <div class="lyric-row">Más si <a href="#term-osare" class="vocabulary-link">osare</a> un extraño enemigo</div>
+                <div class="lyric-row"><a href="#term-profanar" class="vocabulary-link">profanar</a> con su planta tu suelo,</div>
+                <div class="lyric-row">piensa ¡oh Patria querida! que el cielo</div>
+                <div class="lyric-row">un soldado en cada hijo te dio.</div>
+            </div>
+
+            <div class="stanza-block">
+                <div class="block-label">Estrofa II</div>
+                <div class="lyric-row">¡Guerra! ¡Guerra sin <a href="#term-tregua" class="vocabulary-link">tregua</a> al que intente</div>
+                <div class="lyric-row">de la patria manchar los <a href="#term-blasones" class="vocabulary-link">blasones</a>!</div>
+                <div class="lyric-row">¡Guerra, guerra! Los patrios <a href="#term-pendones" class="vocabulary-link">pendones</a></div>
+                <div class="lyric-row">en las olas de sangre empapad.</div>
+                <div class="lyric-row">¡Guerra, guerra! En el monte, en el valle</div>
+                <div class="lyric-row">los cañones <a href="#term-horrisonos" class="vocabulary-link">horrísonos</a> truenen</div>
+                <div class="lyric-row">y los ecos sonoros resuenen</div>
+                <div class="lyric-row">con las voces de ¡Unión! ¡Libertad!</div>
+            </div>
+
+            <div class="stanza-block">
+                <div class="block-label">Estrofa III</div>
+                <div class="lyric-row">Antes patria, que <a href="#term-inermes" class="vocabulary-link">inermes</a> tus hijos</div>
+                <div class="lyric-row">bajo el <a href="#term-yugo" class="vocabulary-link">yugo</a> su cuello dobleguen,</div>
+                <div class="lyric-row">tus campiñas con sangre se rieguen,</div>
+                <div class="lyric-row">sobre sangre se estampe su pie.</div>
+                <div class="lyric-row">Y tus templos, palacios y torres</div>
+                <div class="lyric-row">se derrumben con <a href="#term-horrido" class="vocabulary-link">hórrido</a> estruendo,</div>
+                <div class="lyric-row">y sus ruinas existan diciendo:</div>
+                <div class="lyric-row">de mil héroes la patria aquí fue.</div>
+            </div>
+
+            <div class="stanza-block">
+                <div class="block-label">Estrofa IV</div>
+                <div class="lyric-row">¡Patria! ¡Patria! Tus hijos te juran</div>
+                <div class="lyric-row"><a href="#term-exhalar" class="vocabulary-link">exhalar</a> en tus <a href="#term-aras" class="vocabulary-link">aras</a> su aliento,</div>
+                <div class="lyric-row">si el clarín con su <a href="#term-belico" class="vocabulary-link">bélico</a> acento</div>
+                <div class="lyric-row">los convoca a lidiar con valor.</div>
+                <div class="lyric-row">¡Para ti las <a href="#term-guirnaldas" class="vocabulary-link">guirnaldas</a> de oliva!</div>
+                <div class="lyric-row">¡Un recuerdo para ellos de gloria!</div>
+                <div class="lyric-row">¡Un laurel para ti de victoria!</div>
+                <div class="lyric-row">¡Un sepulcro para ellos de honor!</div>
+            </div>
+
+            <div class="chorus-block">
+                <div class="block-label">Estribillo</div>
+                <div class="lyric-row">Mexicanos, al grito de guerra</div>
+                <div class="lyric-row">el acero a prestad y el bridón,</div>
+                <div class="lyric-row">y retiemble en sus centros la tierra</div>
+                <div class="lyric-row">al sonoro rugir del cañón.</div>
+            </div>
+        </div>
+
+        <div class="cultural-dictionary">
+            <h2>Conoce nuevas palabras</h2>
+            
+            <div class="dictionary-row" id="term-bridon">
+                <span class="term-header">Bridón</span>
+                <span class="term-english-ref">[Bridle / War horse]</span>
+                <p class="term-definition">Antiguo caballo dispuesto para la guerra, o el freno del caballo con las riendas.</p>
+            </div>
+            
+            <div class="dictionary-row" id="term-retiemble">
+                <span class="term-header">Retiemble</span>
+                <span class="term-english-ref">[To shake repeatedly / Tremble]</span>
+                <p class="term-definition">Forma verbal que expresa la vibración o sacudida continua de un objeto o de la misma tierra por un impacto ruidoso.</p>
+            </div>
+
+            <div class="dictionary-row" id="term-cina">
+                <span class="term-header">Ciña</span>
+                <span class="term-english-ref">[To gird / To crown]</span>
+                <p class="term-definition">Ceñir o rodear fuertemente la cabeza u otra parte del cuerpo; en este caso hace alusión a coronar la cabeza de la Patria.</p>
+            </div>
+
+            <div class="dictionary-row" id="term-arcangel">
+                <span class="term-header">Arcángel</span>
+                <span class="term-english-ref">[Archangel]</span>
+                <p class="term-definition">Espíritu celeste de orden superior al de los ángeles ordinarios, enviado como mensajero divino de paz o justicia.</p>
+            </div>
+
+            <div class="dictionary-row" id="term-osare">
+                <span class="term-header">Osare</span>
+                <span class="term-english-ref">[Should dare to]</span>
+                <p class="term-definition">Forma del verbo osar. Atreverse a emprender algo con audacia o insolencia frente a un límite.</p>
+            </div>
+
+            <div class="dictionary-row" id="term-profanar">
+                <span class="term-header">Profanar</span>
+                <span class="term-english-ref">[To desecrate / Despoil]</span>
+                <p class="term-definition">Tratar algo sagrado sin el debido respeto o con desprecio; agraviar el suelo soberano de la nación.</p>
+            </div>
+
+            <div class="dictionary-row" id="term-tregua">
+                <span class="term-header">Tregua</span>
+                <span class="term-english-ref">[Truce / Respite]</span>
+                <p class="term-definition">Cese temporal de hostilidades o de una guerra para entablar negociaciones o dar descanso a las partes.</p>
+            </div>
+
+            <div class="dictionary-row" id="term-blasones">
+                <span class="term-header">Blasones</span>
+                <span class="term-english-ref">[Coats of arms / Honors]</span>
+                <p class="term-definition">Escudos de armas que representan los honores, la dignidad y los méritos históricos de una estirpe o una patria.</p>
+            </div>
+
+            <div class="dictionary-row" id="term-pendones">
+                <span class="term-header">Pendones</span>
+                <span class="term-english-ref">[Banners / Flags]</span>
+                <p class="term-definition">Banderas o estandartes militares antiguos, más largos que anchos, que identificaban a los batallones patrios.</p>
+            </div>
+
+            <div class="dictionary-row" id="term-horrisonos">
+                <span class="term-header">Horrísonos</span>
+                <span class="term-english-ref">[Horrid-sounding / Deafening]</span>
+                <p class="term-definition">Sonido que causa horror, espanto o estruendo ensordecedor al oído.</p>
+            </div>
+
+            <div class="dictionary-row" id="term-inermes">
+                <span class="term-header">Inermes</span>
+                <span class="term-english-ref">[Defenseless / Unarmed]</span>
+                <p class="term-definition">Que se encuentra sin armas materiales o elementos de defensa ante un peligro o agresión.</p>
+            </div>
+
+            <div class="dictionary-row" id="term-yugo">
+                <span class="term-header">Yugo</span>
+                <span class="term-english-ref">[Yoke / Oppression]</span>
+                <p class="term-definition">Instrumento de madera al que se sujetan los bueyes, usado aquí como metáfora de la opresión o la dominación extranjera.</p>
+            </div>
+
+            <div class="dictionary-row" id="term-horrido">
+                <span class="term-header">Hórrido</span>
+                <span class="term-english-ref">[Horrid / Dreadful]</span>
+                <p class="term-definition">Terrible, espantoso, que infunde un miedo profundo o una impresión desoladora.</p>
+            </div>
+
+            <div class="dictionary-row" id="term-exhalar">
+                <span class="term-header">Exhalar</span>
+                <span class="term-english-ref">[To exhale / Breathe out]</span>
+                <p class="term-definition">Despedir gases o el último suspiro de vida en defensa de los ideales colectivos.</p>
+            </div>
+
+            <div class="dictionary-row" id="term-aras">
+                <span class="term-header">Aras</span>
+                <span class="term-english-ref">[Altars]</span>
+                <p class="term-definition">Altares consagrados a los sacrificios religiosos o patrióticos; espacio de devoción suprema.</p>
+            </div>
+
+            <div class="dictionary-row" id="term-belico">
+                <span class="term-header">Bélico</span>
+                <span class="term-english-ref">[Warlike / Martial]</span>
+                <p class="term-definition">Perteneciente o relativo a la guerra o a los ejércitos combatientes.</p>
+            </div>
+
+            <div class="dictionary-row" id="term-guirnaldas">
+                <span class="term-header">Guirnaldas</span>
+                <span class="term-english-ref">[Garlands / Wreaths]</span>
+                <p class="term-definition">Coronas tejidas de flores, hierbas u hojas con que se premian los méritos cívicos, el honor o la paz.</p>
+            </div>
+        </div>
+
+        <div class="form-cta-section">
+            <p>Would you like to learn about any other topic regarding Mexican culture? Please fill out this form:</p>
+            <a href="https://forms.gle/8NBkojrwqV2Zoqi46" target="_blank" class="btn-form-redirect">I want to learn more</a>
+        </div>
+
+        <div class="instructor-profile clearfix">
+            <h2>About the author</h2>
+            <div class="profile-layout">
+                <div class="avatar-frame">
+                    <div class="avatar-fallback-text">https://github.com/pedropablomarin/Mexican-National-Anthem/blob/d2441bab380a3b635e6f2cceaae0ab70d12323f3/ppm.jpg</div>
+                </div>
+                <div class="biography-text">
+                    <p class="instructor-name">Pedro Pablo Marín</p>
+                    <p class="biography-paragraph">
+                        B.A. in Philosophy and an M.A. in Latin American Literature and Culture from Northeastern Illinois University (NEIU). He is the executive producer and host of <em>Xochipilli Culture</em>, a cultural radio broadcast airing on WLPN-LP, 105.5 FM – Lumpen Radio in Chicago. Dedicated to exploration in heritage and critical pedagogy, he is also the founder of learning method<em>The Circle</em>.
+                    </p>
+                    <div class="external-portfolio-links">
+                        <a href="https://pedropablomarin.github.io/the-circle/" target="_blank">The Circle</a>
+                        <a href="https://www.instagram.com/_xochipilliculture/" target="_blank">Xochipilli Culture</a>
+                        <a href="https://lumpenradio.com/shows/xochipilli-radio-coamp-en-espanol/" target="_blank">Lumpen Radio 105.5 FM</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html></pre>
+        </body>
+    </html>
